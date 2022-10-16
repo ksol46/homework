@@ -1,0 +1,145 @@
+@charset "utf-8"
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+html {
+    font-size: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.bt_wrap {
+    margin: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.bt_wrap a {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 10px;
+    min-width: 80px;
+}
+
+.bt_wrap a:hover {
+    text-decoration: underline;
+}
+
+.bt_wrap a.on {
+    background: #000;
+    color: #fff;
+}
+
+/* index.html */
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 1px solid #444;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+.board_list caption {
+    padding: 30px;
+}
+
+.board_list th, td {
+    border-spacing: 0;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.board_list td.title > a:hover {
+    text-decoration: underline;
+}
+
+.board_page {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    box-sizing: border-box;
+    border-left: 0;
+}
+
+.board_page a:hover {
+    text-decoration: underline;
+}
+
+.board_page a.bt {
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+}
+
+.board_page a.bt.num {
+    font-size: 1.4rem;
+
+}
+
+.board_page a.on.num {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+@media all and (max-width: 767px;) {
+    .wrap {
+        width: 95vw;
+    }
+
+    .board_list th:nth-of-type(1),
+    .board_list td:nth-of-type(1) {
+        display: none;
+    }
+
+    .board_list th:nth-of-type(3),
+    .board_list td:nth-of-type(3) {
+        display: none;
+    }
+
+    .board_list th:nth-of-type(4),
+    .board_list td:nth-of-type(1) {
+        display: none;
+    }
+
+    .board_list th:nth-of-type(1),
+    .board_list td:nth-of-type(1) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
