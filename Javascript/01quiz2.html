@@ -7,11 +7,13 @@
       const rawInput = prompt("cm 단위의 숫자를 입력해주세요.");
 
       // 입력을 숫자로 변경하고 cm 단위로 변경합니다.
-      const r = Number(rawInput);
-      const inch = cm
+      const cm = Number(rawInput);
+      const inch = cm * 0.393701;
+      
+      //console.log('달러:${dollar}, 원화:${won}');
 
       // 출력합니다.
-      console.log()
+      console.log(`cm:${cm},inch:${inch}`)
     </script>
   </head>
   <body></body>
